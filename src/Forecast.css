@@ -1,0 +1,58 @@
+.weather-forecast {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.weather-forecast .card {
+  position: relative;
+
+  margin: 0 15px;
+  background-color: #69beef4a;
+  border: 1px solid #dadde164;
+  border-radius: 2px;
+
+  transition: 300ms ease-in-out;
+}
+
+.weather-forecast .card-body {
+  padding: 5px;
+}
+
+.weather-forecast .card:hover {
+  border: solid 1px #ffffff;
+  border-radius: 5px;
+  box-shadow: 0 0 15px #dfdfdf;
+}
+
+.weather-forecast h3 {
+  color: rgb(33, 33, 33);
+  font-size: 14px;
+  font-weight: 400;
+  text-align: center;
+  height: 15px;
+  line-height: 15px;
+  padding-top: 7px;
+}
+
+.weather-forecast img {
+  display: block;
+  margin: 0 auto;
+  height: 48px;
+  width: 48px;
+}
+
+.weather-forecast-temperature {
+  text-align: center;
+  color: rgb(33, 33, 33);
+  font-size: 13px;
+  font-weight: 400;
+  height: auto;
+  line-height: 15px;
+  white-space: nowrap;
+}
+
+.min {
+  color: grey;
+}

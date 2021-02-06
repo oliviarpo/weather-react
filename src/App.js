@@ -1,17 +1,28 @@
 import React from "react";
-import Weather from "./Weather";
+import Search from "./Search.js";
+import Current from "./Current.js";
+import Forecast from "./Forecast.js";
+import Footer from "./Footer.js";
 
-import "./App.css";
+import "./styles.css";
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <h1> Hello from React</h1>
-        <Weather city="Manchester" />
-      </header>
+    <div className="container">
+      <div className="weather-app-wrapper">
+        <div
+          className="weather-app"
+          id="main"
+          style={{
+            backgroundImage: `url("./images/broken-clouds.gif")`,
+          }}
+        >
+          <Search />
+          <Current />
+          <Forecast />
+        </div>
+        <Footer />
+      </div>
     </div>
   );
 }
-
-export default App;
